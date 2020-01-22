@@ -78,3 +78,22 @@ Use one or more of the functions from the fold family (fold, foldLeft, map,
 reduce, filter, etc.) to get full points.
 
 ## Exercise 5
+
+Given the following class Tree, implement the methods map and sum.
+
+```scala
+abstract class Tree {
+  def map(f: Int => Int): Tree
+  def sum: Option[Int]
+}
+
+object Empty extends Tree {
+  override def map(f: Int => Int): Tree = ???
+  override def sum: Option[Int] = ???
+}
+
+class Node(value: Int, left: Tree, right: Tree) extends Tree {
+  override def map(f: Int => Int): Tree = ???
+  override def sum: Option[Int] = ???
+}
+```
